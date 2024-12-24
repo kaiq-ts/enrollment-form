@@ -8,8 +8,7 @@ A simple enrollment form, using HTML and CSS.
 </p>
 
 <p align="left">
-    <img src="./.github/images/preview-1.jpg" width="400px">
-    <img src="./.github/images/preview-form-area.jpg" width="400px">
+    <img src="./.github/images/preview.jpg" width="400px">
 </p>
 
 ## Tech Stack
