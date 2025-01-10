@@ -1,12 +1,12 @@
 .dropzone {
   border: 2px dashed transparent;
   outline: 1px dashed var(--stroke-default);
-  border-radius: 0.25rem;
+  border-radius: 4px;
   display: grid;
   justify-items: center;
-  gap: 0.5rem;
+  gap: 8px;
   text-align: center;
-  padding: 1.75rem 1rem;
+  padding: 28px 16px;
   position: relative;
 
   & input {

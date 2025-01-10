@@ -1,25 +1,25 @@
 @import url(./fields/index.css);
 form {
-  margin-top: 3rem;
+  margin-top: 48px;
 }
 
 fieldset {
   border: none;
   display: grid;
-  gap: 1.5rem;
+  gap: 24px;
 }
 
 legend {
   font: var(--text-sm);
-  margin-bottom: 1.5rem;
+  margin-bottom: 24px;
 }
 
 fieldset + fieldset {
-  margin-top: 3rem;
+  margin-top: 48px;
 }
 
 .actions-wrapper {
-  margin-top: 3rem;
+  margin-top: 48px;
   display: flex;
-  gap: 1rem;
+  gap: 16px;
 }
