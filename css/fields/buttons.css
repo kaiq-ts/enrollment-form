@@ -1,3 +1,9 @@
+.actions-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+}
+
 button {
   all: unset;
   font-weight: 500;
@@ -17,7 +23,6 @@ button {
   }
 
   &.btn-secondary {
-    margin-left: auto;
     border: 1px solid var(--text-highlight);
 
     &:hover,
@@ -25,5 +30,12 @@ button {
       color: var(--brand-dark);
       outline: 0.25rem solid var(--surface-secondary);
     }
+  }
+}
+
+@media (width <= 420px) {
+  .actions-wrapper {
+    display: flex;
+    flex-direction: column;
   }
 }

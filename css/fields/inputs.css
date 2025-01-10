@@ -90,3 +90,10 @@ input {
     display: none;
   }
 }
+
+@media (width <= 1200px) {
+  .address .flex {
+    display: flex;
+    flex-direction: column;
+  }
+}

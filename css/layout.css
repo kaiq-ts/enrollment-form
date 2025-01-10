@@ -1,16 +1,17 @@
 #app {
   display: grid;
-  grid-template-columns: 51.25% 48.75%;
+  grid-template-columns: 48.75% 51.25%;
+  grid-template-areas: "main aside";
   height: 100vh;
-  overflow: hidden;
 }
 
 main {
+  grid-area: main;
   overflow: auto;
   padding: 4rem;
 
   & .main-container {
-    max-width: 33rem;
+    max-width: 100%;
     margin-left: auto;
   }
 
@@ -28,13 +29,15 @@ main {
 }
 
 aside {
+  grid-area: aside;
   background-color: var(--surface-secondary);
   padding: 4rem;
 
   & .aside-container {
-    max-width: 31rem;
+    max-width: 100%;
 
     & > img {
+      max-width: 100%;
       margin-top: 2rem;
     }
   }
@@ -46,5 +49,21 @@ aside {
     & span {
       color: var(--text-highlight);
     }
+  }
+}
+
+@media (width <= 800px) {
+  #app {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "aside"
+      "main";
+    height: auto;
+  }
+
+  main,
+  aside {
+    overflow: auto;
   }
 }
